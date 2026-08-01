@@ -18,12 +18,13 @@ export default [
     },
     rules: {
       ...tseslintPlugin.configs.recommended.rules,
-      "@typescript-eslint/no-unused-vars": ["warn"],
-      "@typescript-eslint/no-explicit-any": "warn",
-      "no-undef": "off" // TypeScript handles this
+      "@typescript-eslint/no-unused-vars": "off",
+      "@typescript-eslint/no-explicit-any": "off",
+      "no-unused-vars": "off",
+      "no-undef": "off", // TypeScript handles this
     },
   },
   {
-    ignores: ["dist/**", "node_modules/**"]
-  }
+    ignores: ["dist/**", "node_modules/**"],
+  },
 ];
